@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sasha Beauty and Hair Salon</title>
+</head>
+<body>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fcf9f7;
+            color: #3d2c2a;
+            line-height: 1.6;
+            padding: 24px 20px;
+        }
+
+        header, nav, main, footer {
+            max-width: 960px;
+            margin: 0 auto 24px auto;
+            background-color: #ffffff;
+            padding: 24px 32px;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(180, 140, 130, 0.08);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 5px solid #e8d5cd;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #3d2c2a;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #6b4f4a;
+            margin-top: 6px;
+        }
+
+        nav {
+            background: #f5ede9;
+            text-align: center;
+            padding: 14px 20px;
+            border-radius: 40px;
+        }
+
+        nav a {
+            color: #3d2c2a;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 8px 18px;
+            border-radius: 30px;
+            transition: background 0.2s;
+            display: inline-block;
+            margin: 0 4px;
+        }
+
+        nav a:hover, nav a.active {
+            background: #dcc9c0;
+            color: #2a1f1d;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #3d2c2a;
+            margin-bottom: 14px;
+            border-left: 6px solid #dcc9c0;
+            padding-left: 16px;
+            font-weight: 600;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #dcc9c0;
+            color: #2a1f1d;
+            padding: 14px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 16px;
+            transition: transform 0.2s;
+        }
+        .btn:hover { transform: translateY(-2px); background: #c9b3a8; }
+
+        .story {
+            background: #fcf9f7;
+            padding: 20px;
+            border-radius: 16px;
+            border-left: 4px solid #e8d5cd;
+            margin: 20px 0;
+        }
+
+        footer {
+            background: #f5ede9;
+            text-align: center;
+            font-size: 0.95rem;
+            color: #3d2c2a;
+            padding: 18px 20px;
+            border-radius: 40px;
+        }
+
+        @media (max-width: 600px) {
+            header, nav, main, footer { padding: 18px 18px; }
+            nav a { margin: 4px 2px; padding: 6px 14px; font-size: 1rem; }
+            header h1 { font-size: 1.9rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1> Sash Beauty and Hair Salon</h1>
+        <p>Enhancing your beauty, one style at a time.</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about%20us.html" class="active" aria-current="page">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 16px;">
+                Our salon is dedicated to providing high-quality beauty and
+                hair services in a relaxing and welcoming environment. 
+                We use premium products and stay updated with the latest trends 
+                to give you the best experience.
+            </p>
+            <div class="story">
+                <h3> Our Story</h3>
+                <p>
+                    Established in 2010, we have proudly served the Johannesburg community for over 15 years. 
+                    What started as a small beauty studio has grown into a full-service salon loved by our clients.
+                </p>
+            </div>
+
+            <div class="story">
+                <h3> Our Values</h3>
+                <p>
+                    We believe in sustainable beauty. That’s why we use eco-friendly products whenever possible 
+                    and support cruelty-free brands. Your beauty shouldn’t cost the earth.
+                </p>
+            </div>
+
+            <div class="story">
+                <h3> Our Team</h3>
+                <p>
+                    Our team of certified stylists and beauty experts are passionate about helping you look and feel 
+                    confident. We take time to listen to you and create styles that match your personality.
+                </p>
+            </div>
+
+            <a href="contact.html" class="btn">Visit Us Today</a>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Glow Beauty & Hair Salon. All Rights Reserved.</p>
+        <p>  Johannesburg Ranburg square, South Africa</p>
+    </footer>
+
+</body>
+</html>    
+    
+</body>
+</html>

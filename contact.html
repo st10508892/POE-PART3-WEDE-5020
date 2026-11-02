@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Sasha Beauty and Hair Salon</title>
+    <link rel="stylesheet" href="websitecssstyle.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1> Sasha Beauty and Hair Salon</h1>
+        <p>Enhancing your beauty, one style at a time.</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about%20us.html">About Us</a>
+        <a href="contact.html" class="active" aria-current="page">Contact</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <h2>Get In Touch</h2>
+        <p style="font-size: 1.1rem; margin-bottom: 20px;">
+            Have a question, want to book an appointment, or just want to say hello? 
+            Fill out the form below or use our contact details. We'd love to hear from you!
+        </p>
+
+        <div class="contact-grid">
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+                <h3>Send Us a Message</h3>
+                <form action="#" method="POST" class="contact-form">
+                    <div>
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="contact-details">
+                <h3>Our Details</h3>
+                <p>
+                    <strong>Phone:</strong> 012 345 6789
+                </p>
+                <p>
+                    <strong>Email:</strong> info@sashasalon.co.za
+                </p>
+                <p>
+                    <strong>Address:</strong> 123 Alice Street, Johannesburg, South Africa
+                </p>
+                <p>
+                    <strong>Opening Hours:</strong><br>
+                    Monday - Saturday: 9am - 6pm<br>
+                    Sunday: Closed
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Sasha Beauty & Hair Salon. All Rights Reserved.</p>
+        <p>123 Alice Street, Johannesburg, South Africa</p>
+    </footer>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

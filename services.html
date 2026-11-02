@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore nail, hair and beauty services at Sasha Beauty and Hair Salon.">
+    <title>Services | Sasha Beauty and Hair Salon</title>
+    <link rel="stylesheet" href="websitecssstyle.css">
+    <style>
+        .header-logo img {
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 12px;
+        }
+
+        .services-intro {
+            text-align: center;
+            margin: 0 auto 28px;
+            max-width: 700px;
+        }
+
+        .services-search {
+            display: block;
+            width: 100%;
+            max-width: 420px;
+            margin: 0 auto 28px;
+            padding: 12px 14px;
+            border: 1px solid #e8d5cd;
+            border-radius: 8px;
+            background: #fff;
+            color: #3d2c2a;
+            font: inherit;
+        }
+
+        .service-category + .service-category {
+            margin-top: 40px;
+        }
+
+        .service-category h3 {
+            margin-bottom: 16px;
+            font-size: 1.5rem;
+        }
+
+        .service-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .service-card {
+            overflow: hidden;
+            border: 1px solid #e8d5cd;
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: 0 4px 12px rgba(180, 140, 130, 0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 18px rgba(180, 140, 130, 0.16);
+        }
+
+        .service-card img {
+            display: block;
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            cursor: zoom-in;
+        }
+
+        .service-card .card-body {
+            padding: 18px;
+        }
+
+        .service-card .card-body h4 {
+            margin-bottom: 8px;
+            color: #6b4f4a;
+            font-size: 1.2rem;
+        }
+
+        .service-card .card-body p {
+            margin: 0;
+        }
+
+        .services-cta {
+            margin-top: 36px;
+            text-align: center;
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            inset: 0;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px 20px;
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 85vh;
+            object-fit: contain;
+        }
+
+        .lightbox .lightbox-close {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            border: 0;
+            background: transparent;
+            color: #fff;
+            font-size: 2.5rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="_images/logo.jpg" alt="Sasha Beauty and Hair Salon logo">
+        </div>
+        <div class="header-title-group">
+            <h1>Sasha Beauty and Hair Salon</h1>
+            <p>Enhancing Beauty. Elevating Confidence.</p>
+        </div>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html" class="active" aria-current="page">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about%20us.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section aria-labelledby="services-heading">
+            <h2 id="services-heading">Our Services</h2>
+            <p class="services-intro">
+                From beautiful nails to professional hair care, our salon offers treatments
+                to help you look and feel your best.
+            </p>
+
+            <label for="serviceSearch">Find a service</label>
+            <input class="services-search" type="search" id="serviceSearch" placeholder="Search nails, hair styling, colour...">
+
+            <section class="service-category" aria-labelledby="nail-services-heading">
+                <h3 id="nail-services-heading">Nail Services</h3>
+                <div class="service-container">
+                    <article class="service-card searchable-item">
+                        <img src="_images/Acrylic nails.jpg" alt="Custom sculptured acrylic nail design">
+                        <div class="card-body">
+                            <h4>Acrylic Sculpture</h4>
+                            <p>Durable, custom-sculpted extensions designed to suit your style and lifestyle.</p>
+                        </div>
+                    </article>
+                    <article class="service-card searchable-item">
+                        <img src="_images/gel nails.jpg" alt="Natural-looking gel nail extensions">
+                        <div class="card-body">
+                            <h4>Gel Extensions</h4>
+                            <p>Lightweight extensions with a smooth, natural-looking finish.</p>
+                        </div>
+                    </article>
+                    <article class="service-card searchable-item">
+                        <img src="_images/Pedicure .jpg" alt="Relaxing luxury pedicure treatment">
+                        <div class="card-body">
+                            <h4>Luxury Pedicure</h4>
+                            <p>Relax and refresh with a spa-style pedicure and premium products.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="service-category" aria-labelledby="hair-services-heading">
+                <h3 id="hair-services-heading">Hair Services</h3>
+                <div class="service-container">
+                    <article class="service-card searchable-item">
+                        <img src="_images/hairstyling-stylist.jpg" alt="Stylist creating a finished hairstyle">
+                        <div class="card-body">
+                            <h4>Hair Styling</h4>
+                            <p>Professional styling for everyday looks and special occasions.</p>
+                        </div>
+                    </article>
+                    <article class="service-card searchable-item">
+                        <img src="_images/haircolouring-stylist.jpg" alt="Stylist applying hair colour">
+                        <div class="card-body">
+                            <h4>Hair Colouring</h4>
+                            <p>Refresh your look with a colour selected to complement your style.</p>
+                        </div>
+                    </article>
+                    <article class="service-card searchable-item">
+                        <img src="_images/haircutting-stylist.jpg" alt="Stylist cutting a client's hair">
+                        <div class="card-body">
+                            <h4>Haircutting</h4>
+                            <p>Enjoy a professional cut shaped around your preferences.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <div class="services-cta">
+                <p>Ready to plan your visit?</p>
+                <a href="contact.html" class="btn">Contact Us</a>
+            </div>
+        </section>
+    </main>
+
+    <div id="imageLightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Expanded service image">
+        <button type="button" class="lightbox-close" aria-label="Close enlarged image">&times;</button>
+        <img id="lightboxImg" src="" alt="">
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sasha Beauty and Hair Salon. All Rights Reserved.</p>
+    </footer>
+
+    <script src="myscript.js"></script>
+</body>
+</html>

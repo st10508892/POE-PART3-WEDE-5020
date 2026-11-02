@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the Sasha Beauty and Hair Salon gallery of nail, hair and beauty work.">
+    <title>Gallery | Sasha Beauty and Hair Salon</title>
+    <link rel="stylesheet" href="websitecssstyle.css">
+    <style>
+        .gallery-intro {
+            margin-bottom: 20px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+            cursor: zoom-in;
+            transition: transform 0.3s;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.03);
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            inset: 0;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 60px 20px 20px;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 85vh;
+            object-fit: contain;
+        }
+
+        .lightbox .lightbox-close {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            border: 0;
+            background: transparent;
+            color: white;
+            font-size: 2.5rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sasha Beauty and Hair Salon</h1>
+        <p>Enhancing Beauty. Elevating Confidence.</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html" class="active" aria-current="page">Gallery</a>
+        <a href="about%20us.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section aria-labelledby="gallery-heading">
+            <h2 id="gallery-heading">Inspiration Gallery</h2>
+            <p class="gallery-intro">Take a look at some of our nail, hair and beauty work. Select an image to view it larger.</p>
+
+            <div class="gallery-grid">
+                <img src="_images/Acrylic nails.jpg" alt="Luxury acrylic nail design" class="lightbox-trigger">
+                <img src="_images/gel nails.jpg" alt="Gel nail extensions" class="lightbox-trigger">
+                <img src="_images/Pedicure .jpg" alt="Luxury pedicure treatment" class="lightbox-trigger">
+                <img src="_images/hairstyling-stylist.jpg" alt="Professional hair styling" class="lightbox-trigger">
+                <img src="_images/haircolouring-stylist.jpg" alt="Hair colouring by a stylist" class="lightbox-trigger">
+                <img src="_images/haircutting.jpg" alt="Professional haircut" class="lightbox-trigger">
+                <img src="_images/haircutting-stylist.jpg" alt="Stylist cutting a client's hair" class="lightbox-trigger">
+                <img src="_images/hairstyling.jpg" alt="Finished hair styling" class="lightbox-trigger">
+                <img src="_images/haircolouring.jpg" alt="Finished hair colouring" class="lightbox-trigger">
+            </div>
+        </section>
+    </main>
+
+    <div id="imageLightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Expanded gallery image">
+        <button type="button" class="lightbox-close" aria-label="Close enlarged image">&times;</button>
+        <img id="lightboxImg" src="" alt="">
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sasha Beauty and Hair Salon. All Rights Reserved.</p>
+    </footer>
+
+    <script src="myscript.js"></script>
+</body>
+</html>
